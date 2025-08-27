@@ -31,14 +31,14 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-              href={Links.discord}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Discord"
-              className="bg-muted p-3 rounded-full text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
-              <FaDiscord size={20} />
-            </a>
+                href={Links.discord}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
+                <FaDiscord size={20} />
+              </a>
               <a
                 href={Links.email}
                 target="_blank"
