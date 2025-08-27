@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "blue" | "dark" | "purple";
+type Theme = "azul" | "oscuro" | "morado";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -15,15 +15,14 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Retrieve and validate the saved theme during initialization
     const savedTheme = localStorage.getItem("theme") as Theme;
-    const validThemes: Theme[] = ["blue", "dark", "purple"];
-    return validThemes.includes(savedTheme) ? savedTheme : "dark";
+    const validThemes: Theme[] = ["azul", "oscuro", "morado"];
+    return validThemes.includes(savedTheme) ? savedTheme : "oscuro";
   });
 
   useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove("theme-dark", "theme-blue", "theme-purple");
+    root.classList.remove("theme-oscuro", "theme-azul", "theme-morado");
     root.classList.add(`theme-${theme}`);
     localStorage.setItem("theme", theme);
   }, [theme]);
@@ -38,7 +37,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (context === undefined) {
-    throw new Error("useTheme must be used within a ThemeProvider");
+    throw new Error("useTheme debe usarse dentro de un ThemeProvider");
   }
   return context;
 }
