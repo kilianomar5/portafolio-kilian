@@ -37,15 +37,6 @@ const Footer = () => {
                 aria-label="Discord"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
-                <FaDiscord className="h-5 w-5" />
-              </a>
-              <a
-                href={Links.discord}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Discord"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
                 <FaDiscord size={20} />
               </a>
               <a
