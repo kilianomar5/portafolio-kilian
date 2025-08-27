@@ -6,7 +6,7 @@
 
 @layer base {
   :root,
-  .theme-blue {
+  .theme-azul {
     --background: 210 50% 98%;
     --foreground: 215 25% 27%;
 
@@ -51,7 +51,7 @@
     --radius: 0.75rem;
   }
 
-  .theme-dark {
+  .theme-oscuro {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -96,7 +96,7 @@
     --radius: 0.75rem;
   }
 
-  .theme-purple {
+  .theme-morado {
     --background: 260 50% 98%;
     --foreground: 250 25% 27%;
 
