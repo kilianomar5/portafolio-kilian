@@ -27,16 +27,16 @@ export const skillCategories: SkillCategory[] = [
   {
     name: "Bases de Datos",
     icon: Database,
-    skills: ["MongoDB", "MySQL", "Firebase", "PostgreSQL"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL"],
   },
   {
     name: "Herramientas y Tecnologías",
     icon: Cpu,
-    skills: ["Git", "Agile/Scrum"],
+    skills: ["GitHub", "Docker", "Vercel", "Netlify"],
   },
   {
     name: "Diseño",
     icon: Palette,
-    skills: ["Figma", "Adobe AI", "UI/UX Design", "Wireframing", "Prototyping"],
+    skills: ["Canva"],
   },
 ];
