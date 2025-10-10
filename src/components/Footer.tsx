@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <span className="text-2xl font-bold text-primary">ImHunterIdk</span>
             <p className="mt-2 text-muted-foreground max-w-md">
-              Desarollo web & Informático, apasionado por la tecnología.
+              Desarollador web & Informático, apasionado por la tecnología.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
             <div className="text-gray-400 text-sm text-right">
               <p>
-                © {currentYear} ImHunterIdk | Desarollo web & Informático
+                © {currentYear} ImHunterIdk | Desarollador web & Informático
               </p>
             </div>
           </div>
