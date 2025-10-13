@@ -42,7 +42,7 @@ export const projects: Project[] = [
     tags: ["Videojuego", "Godot Engine", "PGL", "Clicker", "Galleta"],
     links: {
       github: "",
-      live: "https://mc.hyronmc.me", 
+      live: "https://gamejolt.com/games/cookiecliker/1024095", 
     },
   },
   {
