@@ -36,10 +36,10 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Servidor Minecraft HyronMC",
-    description: "Servidor de Minecraft llamado HyronMC, con mods personalizados y una comunidad activa de jugadores.",
+    title: "Videojuego - Cookie Clicker",
+    description: "Un juego de tipo 'clicker' donde los jugadores hacen clic en una galleta para ganar puntos.",
     image: "/imgs/p3.png",
-    tags: ["Minecraft", "Servidor", "Gaming", "Comunidad"],
+    tags: ["Videojuego", "Godot Engine", "PGL", "Clicker", "Galleta"],
     links: {
       github: "",
       live: "https://mc.hyronmc.me", 
