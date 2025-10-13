@@ -20,7 +20,7 @@ export const projects: Project[] = [
     tags: ["Web", "Servicios", "Informática", "Reparaciones"],
     links: {
       github: "", 
-      live: "https://kilianreparaciones.es",
+      live: "https://kilianreparaciones.pro",
     },
   },
   {
