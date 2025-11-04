@@ -4,7 +4,7 @@ import { LucideIcon } from "lucide-react";
 export type Achievement = {
   id: number;
   title: string;
-  type: "competition" | "academic" | "certification";
+  type: "competition" | "academic" | "certificacion";
   year: string;
   description: string;
   icon: LucideIcon;
@@ -22,7 +22,7 @@ export const achievements: Achievement[] = [
   {
     id: 2,
     title: "Certificación en JavaScript",
-    type: "certification",
+    type: "certificacion",
     year: "2024",
     description: "Obtuve una certificación en JavaScript, validando mis habilidades en este lenguaje.",
     icon: Trophy,
@@ -38,7 +38,7 @@ export const achievements: Achievement[] = [
   {
     id: 4,
     title: "Certificación en HTML Y CSS",
-    type: "certification",
+    type: "certificacion",
     year: "2024",
     description: "Completé una certificación completa de programación en HTML y CSS.",
     icon: Award,

@@ -112,7 +112,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="touch-target"
               >
-                <a href="#proyectos" aria-label="Go to projects section">
+                <a href="#proyectos" aria-label="Ir a la sección de proyectos">
                   <Button
                     variant="outline"
                     className="min-w-[120px] py-3 text-base"
