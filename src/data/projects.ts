@@ -56,4 +56,15 @@ export const projects: Project[] = [
       live: "https://discord.gg/fZgqGBmMbh", 
     },
   },
+  {
+    id: 4,
+    title: "Clima Local",
+    description: "App de clima con información local (temperatura, humedad, etc).",
+    image: "/imgs/p5.png",
+    tags: ["App", "Clima", "Local", "Información"],
+    links: {
+      github: "",
+      live: "https://clima-local.vercel.app/", 
+    },
+  },
 ];
