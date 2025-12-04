@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tags: ["App", "Clima", "Local", "Información"],
     links: {
       github: "",
-      live: "https://clima-local.vercel.app/", 
+      live: "https://clima-local-pied.vercel.app/", 
     },
   },
 ];
