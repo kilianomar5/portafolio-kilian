@@ -4,8 +4,15 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 
+<Routes>
+  <Route path="/" element={<App />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
+
 // Register the Intersection Observer polyfill for older browsers
 import 'intersection-observer';
+import { Route, Routes } from 'react-router-dom';
+import NotFound from './pages/NotFound.tsx';
 
 // Create a root for the application
 const container = document.getElementById('root');
