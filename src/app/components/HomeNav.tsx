@@ -6,6 +6,16 @@ import { usePathname } from "next/navigation";
 
 const baseLinks = ["Inicio", "Sobre Mi", "Tools", "Proyectos", "Blog"];
 
+// 1. Añadimos un diccionario para enlazar tus textos en español con las carpetas reales
+const rutas: { [key: string]: string } = {
+    "Inicio": "/",
+    "Sobre Mi": "/about",
+    "Tools": "/tools",
+    "Proyectos": "/projects",
+    "Blog": "/blog",
+    "Testimonies": "/testimonies"
+};
+
 export default function HomeNav() {
     const pathname = usePathname();
     
@@ -16,7 +26,12 @@ export default function HomeNav() {
 
     const findIndex = () => {
         const index = links.findIndex((link) => {
-            const url = `/${link.toLowerCase()}`;
+            // 2. Usamos el diccionario para buscar la ruta
+            const url = rutas[link] || `/${link.toLowerCase()}`;
+            
+            // Excepción para que el botón "Inicio" solo se marque cuando estés exactamente en "/"
+            if (url === "/") return pathname === "/";
+            
             return pathname === url || pathname.startsWith(`${url}/`);
         });
         return index === -1 ? 0 : index;
@@ -29,6 +44,7 @@ export default function HomeNav() {
         <div className="relative flex flex-col items-center w-full py-2 sm:py-0 overflow-x-hidden">
             {/* 1. SVG Logo - Top on mobile, Absolute Left on desktop */}
             <div className="flex items-center select-none mb-4 sm:mb-0 sm:absolute sm:left-0 sm:top-1/2 sm:-translate-y-1/2">
+                {/* 3. ¡Corregido también el enlace del logo para que vaya a "/"! */}
                 <Link href="/" className="hover:opacity-80 transition-all active:scale-95 cursor-pointer">
                     <Image src="/logo.svg" alt="Logo" width={170} height={100} className="w-[140px] h-auto" />
                 </Link>
@@ -52,8 +68,9 @@ export default function HomeNav() {
                         }}
                     />
                     {links.map((link) => {
-                        const url = `/${link.toLowerCase()}`;
-                        const isActive = pathname === url || pathname.startsWith(`${url}/`);
+                        // 4. Aplicamos la ruta correcta al construir el menú
+                        const url = rutas[link] || `/${link.toLowerCase()}`;
+                        const isActive = url === "/" ? pathname === "/" : (pathname === url || pathname.startsWith(`${url}/`));
                         
                         return (
                             <li key={link} className="relative z-10 w-full">
