@@ -77,7 +77,8 @@ export default function HomeInner() {
     const lastUpdate = useRef<number>(0);
 
     useEffect(() => {
-        setIsMounted(true);
+        const frame = window.requestAnimationFrame(() => setIsMounted(true));
+        return () => window.cancelAnimationFrame(frame);
     }, []);
 
     useEffect(() => {

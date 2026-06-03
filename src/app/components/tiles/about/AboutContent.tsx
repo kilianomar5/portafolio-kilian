@@ -122,7 +122,11 @@ function ModalPortal({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const timeoutId = window.setTimeout(() => {
+      setMounted(true);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   if (!mounted) return null;
@@ -169,14 +173,17 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
         try {
           const response = await fetch('/api/reviews');
           const data = await response.json();
-          const formattedData = data.map((item: any) => ({
-            id: item.id,
-            quote: item.review || item.quote,
-            name: item.name,
-            position: item.position,
-            company: item.company,
-            rating: item.rating
-          }));
+          const formattedData = (data as unknown[]).map((item) => {
+            const apiItem = item as Partial<TestimonialItem> & { review?: string };
+            return {
+              id: apiItem.id ?? 0,
+              quote: apiItem.review || apiItem.quote || "",
+              name: apiItem.name || "",
+              position: apiItem.position || "",
+              company: apiItem.company || "",
+              rating: apiItem.rating ?? 0,
+            } as TestimonialItem;
+          });
           setTestimonials(formattedData);
         } catch (error) {
           console.error("Failed to fetch testimonials:", error);
@@ -213,7 +220,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                 <div className="relative w-24 h-24 shrink-0">
                   <Image
                     src="/mepopper.png"
-                    alt="Akshay profile"
+                    alt="Kilian profile"
                     width={100}
                     height={100}
                     className="rounded-full"

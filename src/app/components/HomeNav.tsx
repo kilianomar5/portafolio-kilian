@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-const baseLinks = ["Home", "About", "Tools", "Projects", "Blog"];
+const baseLinks = ["Inicio", "Sobre Mi", "Herramientas", "Proyectos", "Blog"];
 
 export default function HomeNav() {
     const pathname = usePathname();

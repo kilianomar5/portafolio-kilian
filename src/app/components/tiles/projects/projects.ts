@@ -2,10 +2,10 @@ export const projectsData = [
   {
     name: "Portfolio",
     description:
-      "A personal portfolio website designed to display my development skills and projects. This highlights my proficiency in Angular, and more.",
+      "Portafolio Oficial de Kilian, un desarrollador de software apasionado por crear soluciones innovadoras y eficientes. Explora mis proyectos, habilidades y experiencia en el desarrollo de software.",
     image: "/projects/portfolio.webp",
-    github: "https://github.com/Akshayp2002/personal-portfolio-angular",
-    view: "https://devakshay.app",
+    github: "https://github.com/kilianomar5",
+    view: "https://imhunteridk.info",
     workStatus: true,
     date: "Augest - 2024",
     demo: false,
@@ -34,8 +34,8 @@ export const projectsData = [
     description:
       "Retro Radio is a music streaming platform that offers a nostalgic experience with a curated selection of classic and vintage music.",
     image: "/projects/retro-radio.png",
-    github: "https://github.com/Akshayp2002/radio",
-    view: "https://radio-devakshay.vercel.app",
+    github: "https://github.com/kilianomar5/radio",
+    view: "https://radio-devkilian.vercel.app",
     workStatus: true,
     date: "Feb - 2026",
     demo: false,
@@ -64,8 +64,8 @@ export const projectsData = [
     description:
       "A new and minimal personal portfolio website designed to display my development skills and projects.",
     image: "/projects/minimal-portfolio.png",
-    github: "https://github.com/Akshayp2002/nextjs-portfolio",
-    view: "https://devakshaynew.vercel.app",
+    github: "https://github.com/kilianomar5/nextjs-portfolio",
+    view: "https://devkilian.vercel.app",
     workStatus: false,
     date: "December - 2025",
     demo: false,

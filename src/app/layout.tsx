@@ -23,8 +23,8 @@ const youngSerif = Young_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Akshay | Software Developer",
-  description: "Bento-style personal portfolio",
+  title: "Kilian | Software Developer",
+  description: "Portafolio Oficial de Kilian, un desarrollador de software apasionado por crear soluciones innovadoras y eficientes. Explora mis proyectos, habilidades y experiencia en el desarrollo de software.",
 };
 
 export default function RootLayout({
