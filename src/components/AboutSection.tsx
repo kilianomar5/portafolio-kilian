@@ -102,7 +102,7 @@ const AboutSection = () => {
                         IES San Juan de la Rambla
                       </p>
                       <p className="text-sm text-muted-foreground">
-                        2024 - Presente
+                        2024 - 2026 
                       </p>
                       <p className="text-sm text-muted-foreground">
                         También hice un Ciclo Medio de Sistemas Microinformáticos y Redes
@@ -142,7 +142,7 @@ const AboutSection = () => {
                           IES San Juan de la Rambla
                         </p>
                         <p className="text-sm text-muted-foreground">
-                          Desde septiembre de 2024 hasta junio de 2026 (en curso)
+                          Desde septiembre de 2024 hasta junio de 2026 (finalizado)
                         </p>
                       </div>
                     </div>
