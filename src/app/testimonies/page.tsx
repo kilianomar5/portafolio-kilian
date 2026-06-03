@@ -3,7 +3,7 @@ import TestimonyForm from './TestimonyForm';
 import TestimonyList from './TestimonyList';
 
 export const metadata = {
-  title: 'Testimonies | Akshay',
+  title: 'Testimonies | ImHunter_Idk',
   description: 'Share your experience working with me.',
 };
 
