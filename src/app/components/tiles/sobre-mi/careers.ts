@@ -128,7 +128,7 @@ export const careersData: CareerEntry[] = [
     projects: [],
     skills: [
       { name: "Hardware", icon: "/tech/hardware.png" },
-      { name: "Redes", icon: "/tech/network.png" },
+      { name: "Redes", icon: "/tech/network.webp" },
       { name: "Windows", icon: "/tech/windows.png" },
       { name: "Soporte IT", icon: "/tech/support.png" },
     ],
