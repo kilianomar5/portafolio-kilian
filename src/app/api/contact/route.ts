@@ -46,14 +46,14 @@ export async function POST(req: Request) {
         await transporter.sendMail(mailOptions);
 
         return NextResponse.json(
-            { success: true, message: 'Message sent successfully' },
+            { success: true, message: 'Mensaje enviado con éxito' },
             { status: 200 }
         );
 
     } catch (error) {
-        console.error('Error sending contact email:', error);
+        console.error('Fallo al enviar el correo:', error);
         return NextResponse.json(
-            { error: 'Failed to send message. Please try again later.' },
+            { error: 'Fallo al enviar el correo, por favor intenta de nuevo mas tarde.' },
             { status: 500 }
         );
     }
