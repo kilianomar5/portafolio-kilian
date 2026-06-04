@@ -241,7 +241,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
 
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <SectionCard title="Experience" badge="Career">
+              <SectionCard title="Experiencia" badge="Career">
                 <div className="space-y-3.5">
                   {previewExperience.map((item) => (
                     <GlowContainer key={`${item.role}-${item.company}`}>
@@ -292,7 +292,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
             </div>
 
             <div className="lg:col-span-5">
-              <SectionCard title="Education" badge="Studies">
+              <SectionCard title="Educacion" badge="Studies">
                 <div className="space-y-3.5">
                   {previewEducation.map((item) => (
                     <GlowContainer key={`${item.degree}-${item.institute}`}>
@@ -322,7 +322,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
             </div>
           </div>
 
-          <SectionCard title="Testimonials">
+          <SectionCard title="Testimonios">
             <p className="mb-4 text-xs leading-6 text-gray-600 dark:text-gray-300 sm:text-sm sm:leading-7">
               Una selección de testimonios sobre mi experiencia profesional.
             </p>

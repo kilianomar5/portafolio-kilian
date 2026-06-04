@@ -90,7 +90,7 @@ export default function IntroTile() {
                 , un desarrollador web / reparador de equipos de Tenerife.
             </h1>
             <p className="mt-1 text-gray-500 text-base leading-relaxed max-w-[500px]">
-                Me especializo en crear aplicaciones web limpias y útiles, con un enfoque en la experiencia del usuario y el rendimiento. 
+                Me especializo en hacer paginas web limpias y útiles, con un enfoque en la experiencia del usuario y el rendimiento. 
             </p>
         </div>
     );

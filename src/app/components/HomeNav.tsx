@@ -51,12 +51,13 @@ export default function HomeNav() {
         </div>
 
             {/* 2. Centered Pill Menu */}
-            <nav className="w-full flex justify-center items-center sm:h-20 px-2 sm:px-0">
+            <nav className="w-full flex justify-center items-center sm:h-20 px-1 sm:px-0">
                 <ul 
                     className={`relative grid items-center p-1 bg-[#eeeeee] dark:bg-[#0d1117] rounded-full ring-2 ring-transparent dark:ring-gray-700 w-full transition-all duration-500 overflow-hidden mx-auto`}
                     style={{ 
                         gridTemplateColumns: `repeat(${links.length}, minmax(0, 1fr))`,
-                        maxWidth: isExpanded ? '600px' : '500px'
+                        maxWidth: isExpanded ? '600px' : '520px',
+                        minWidth: '340px' /* Esto evita que el menú se aplaste en móviles estrechos */
                     }}
                 >
                     {/* Animated active indicator */}
@@ -68,7 +69,6 @@ export default function HomeNav() {
                         }}
                     />
                     {links.map((link) => {
-                        // 4. Aplicamos la ruta correcta al construir el menú
                         const url = rutas[link] || `/${link.toLowerCase()}`;
                         const isActive = url === "/" ? pathname === "/" : (pathname === url || pathname.startsWith(`${url}/`));
                         
@@ -76,8 +76,8 @@ export default function HomeNav() {
                             <li key={link} className="relative z-10 w-full">
                                 <Link
                                     href={url}
-                                    className={`block w-full text-center rounded-full px-0.5 py-2 font-semibold transition-colors duration-200 truncate
-                                        ${isExpanded ? 'text-[9px] sm:text-[11px] md:text-sm' : 'text-xs sm:text-sm'}
+                                    className={`block w-full text-center rounded-full px-0 sm:px-1 py-2 font-semibold transition-colors duration-200 truncate
+                                        ${isExpanded ? 'text-[9px] sm:text-[11px] md:text-sm' : 'text-[10px] sm:text-sm tracking-tighter sm:tracking-normal'}
                                         ${isActive ? "text-gray-900 dark:text-white" : "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"}`}
                                 >
                                     {link}

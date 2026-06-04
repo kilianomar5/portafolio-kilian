@@ -26,9 +26,9 @@ export type CareerEntry = {
 export const careersData: CareerEntry[] = [
   {
     id: "baifos",
-    role: "Prácticas de Desarrollo de Aplicaciones Multiplataforma", //[cite: 1]
-    company: "Baifos Informática - Fran Soluciones", //[cite: 1]
-    period: "Marzo 2026 - Mayo 2026", //[cite: 1]
+    role: "Prácticas de Desarrollo de Aplicaciones Multiplataforma", 
+    company: "Baifos Informática - Fran Soluciones", 
+    period: "Marzo 2026 - Mayo 2026", 
     badge: "Prácticas DAM",
     current: false,
     logo: "/company/baifos.png", // Asegúrate de añadir este logo a tu carpeta public
@@ -81,9 +81,9 @@ export const careersData: CareerEntry[] = [
   },
   {
     id: "el-castillo",
-    role: "Camarero", //[cite: 1]
-    company: "Bar Cafetería Heladería El Castillo", //[cite: 1]
-    period: "Agosto 2025 - Actualidad", //[cite: 1]
+    role: "Camarero", 
+    company: "Bar Cafetería Heladería El Castillo", 
+    period: "Agosto 2025 - Actualidad", 
     badge: "Hostelería",
     current: true,
     logo: "/company/elcastillo.png",
@@ -99,9 +99,9 @@ export const careersData: CareerEntry[] = [
   },
   {
     id: "100-montaditos",
-    role: "Ayudante de Camarero", //[cite: 1]
-    company: "100 Montaditos Garachico", //[cite: 1]
-    period: "Junio 2025 - Julio 2025", //[cite: 1]
+    role: "Ayudante de Camarero", 
+    company: "100 Montaditos Garachico", 
+    period: "Junio 2025 - Julio 2025", 
     badge: "Hostelería",
     current: false,
     logo: "/company/100montaditos.png",
@@ -116,16 +116,16 @@ export const careersData: CareerEntry[] = [
   },
   {
     id: "ayto-buenavista",
-    role: "Prácticas de Sistemas Microinformaticos y Redes", //[cite: 1]
-    company: "Ayuntamiento de Buenavista del Norte", //[cite: 1]
-    period: "Abril 2024 - Junio 2024", //[cite: 1]
+    role: "Prácticas de Sistemas Microinformaticos y Redes", 
+    company: "Ayuntamiento de Buenavista del Norte", 
+    period: "Abril 2024 - Junio 2024", 
     badge: "Prácticas SMR",
     current: false,
     logo: "/company/buenavista.png",
     overview:
       "Entidad pública responsable de la gestión municipal, infraestructura tecnológica y atención ciudadana.",
     myRole:
-      "Experto en red e instalación de sistemas microinformáticos. Desempeñé funciones como instalador-reparador de equipos informáticos, asegurando el correcto funcionamiento de las infraestructuras de la administración local.", //[cite: 1]
+      "Experto en red e instalación de sistemas microinformáticos. Desempeñé funciones como instalador-reparador de equipos informáticos, asegurando el correcto funcionamiento de las infraestructuras de la administración local.", 
     projects: [],
     skills: [
       { name: "Hardware", icon: "/tech/hardware.svg" },
