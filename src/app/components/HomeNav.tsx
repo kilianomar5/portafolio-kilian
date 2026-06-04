@@ -42,13 +42,14 @@ export default function HomeNav() {
 
     return (
         <div className="relative flex flex-col items-center w-full py-2 sm:py-0 overflow-x-hidden">
-            {/* 1. SVG Logo - Top on mobile, Absolute Left on desktop */}
+            {/* 1. Texto Logo - Top on mobile, Absolute Left on desktop */}
             <div className="flex items-center select-none mb-4 sm:mb-0 sm:absolute sm:left-0 sm:top-1/2 sm:-translate-y-1/2">
-                {/* 3. ¡Corregido también el enlace del logo para que vaya a "/"! */}
                 <Link href="/" className="hover:opacity-80 transition-all active:scale-95 cursor-pointer">
-                    <Image src="/logo.svg" alt="Logo" width={170} height={100} className="w-[140px] h-auto" />
+                    <span className="text-[#10b981] font-black text-2xl tracking-tighter hover:text-white transition-colors">
+                        imhunter_idk
+                    </span>
                 </Link>
-            </div>
+        </div>
 
             {/* 2. Centered Pill Menu */}
             <nav className="w-full flex justify-center items-center sm:h-20 px-2 sm:px-0">
