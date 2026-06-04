@@ -80,7 +80,7 @@ export default function ProjectTile({ project }: { project: Project }) {
                     )}
                     {project.workStatus === false && (
                         <span className="px-2 bg-red-50 dark:bg-red-900 text-red-700 dark:text-red-200 rounded-full text-xs font-bold border border-red-100/50 dark:border-red-900/50 hidden md:inline-block">
-                            Closed
+                            Cerrado
                         </span>
                     )}
                     {project.date && (

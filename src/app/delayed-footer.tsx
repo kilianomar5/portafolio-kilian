@@ -20,7 +20,7 @@ export default function DelayedFooter() {
           showFooter ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        &copy; {new Date().getFullYear()} Kilian Omar / ImHunter_Idk. All rights reserved.
+        &copy; {new Date().getFullYear()} Kilian Omar / ImHunter_Idk.
       </p>
     </footer>
   );

@@ -39,7 +39,7 @@ export default function BlogGrid({ items }: { items: BlogPost[] }) {
   if (items.length === 0) {
     return (
       <div className="rounded-3xl bg-gray-100/70 dark:bg-gray-800/70 p-8 text-center text-sm text-gray-500 dark:text-gray-400">
-        No blog posts found. Check your Contentful env values and content type.
+        No se encontraron publicaciones de blog.
       </div>
     );
   }

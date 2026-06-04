@@ -7,7 +7,7 @@ export const projectsData = [
     github: "https://github.com/kilianomar5",
     view: "https://imhunteridk.info",
     workStatus: true,
-    date: "Augest - 2024",
+    date: "Agosto - 2024",
     demo: false,
     personal: true,
     tech: [
@@ -67,7 +67,7 @@ export const projectsData = [
     github: "https://github.com/kilianomar5/nextjs-portfolio",
     view: "https://devkilian.vercel.app",
     workStatus: false,
-    date: "December - 2025",
+    date: "Diciembre - 2025",
     demo: false,
     personal: true,
     tech: [
@@ -126,7 +126,7 @@ export const projectsData = [
     github: false,
     view: "https://rugr.com",
     workStatus: false,
-    date: "February - 2025",
+    date: "Febrero - 2025",
     demo: false,
     tech: [
       {
@@ -227,7 +227,7 @@ export const projectsData = [
     github: "https://github.com/Akshayp2002/quote-generator",
     view: "https://timspass.vercel.app/quotes",
     workStatus: false,
-    date: "Augest - 2024",
+    date: "Agosto - 2024",
     demo: true,
     tech: [
       {
@@ -256,7 +256,7 @@ export const projectsData = [
     github: "https://github.com/Akshayp2002/quote-generator",
     view: "https://timspass.vercel.app/qrcode",
     workStatus: false,
-    date: "Augest - 2024",
+    date: "Agosto - 2024",
     demo: true,
     tech: [
       {
@@ -285,7 +285,7 @@ export const projectsData = [
     github: "https://github.com/Akshayp2002/instagram-angular",
     view: "https://devinstagram.vercel.app",
     workStatus: true,
-    date: "July - 2024",
+    date: "Julio - 2024",
     demo: true,
     tech: [
       {
@@ -314,7 +314,7 @@ export const projectsData = [
     github: "https://github.com/Akshayp2002/netflix-clone-angular",
     view: "https://netflix-clone-angular2.vercel.app",
     workStatus: false,
-    date: "June - 2024",
+    date: "Junio - 2024",
     demo: true,
     tech: [
       {
@@ -347,7 +347,7 @@ export const projectsData = [
     github: false,
     view: "https://swiftrevel.com",
     workStatus: false,
-    date: "May - 2024",
+    date: "Mayo - 2024",
     demo: false,
     tech: [
       {
@@ -376,7 +376,7 @@ export const projectsData = [
     github: false,
     view: false,
     workStatus: false,
-    date: "November - 2023",
+    date: "Noviembre - 2023",
     demo: false,
     tech: [
       {
@@ -405,7 +405,7 @@ export const projectsData = [
     github: "https://github.com/Akshayp2002/Student-360",
     view: false,
     workStatus: false,
-    date: "April - 2022",
+    date: "Abril - 2022",
     demo: false,
     tech: [
       {

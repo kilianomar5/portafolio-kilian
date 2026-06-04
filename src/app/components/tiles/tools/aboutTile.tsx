@@ -26,9 +26,9 @@ export default function aboutTile() {
                 </div> */}
             </div>
             <p className="text-gray-500 text-base leading-relaxed max-w-[500px]">
-                I actively use a diverse set of cutting-edge technologies and tools in my daily work. From
-                modern frameworks and
-                languages to powerful platforms, my toolkit ensures high-quality and efficient development. 🚀 🌟
+                Utilizo activamente un conjunto diverso de tecnologías y herramientas de vanguardia en mi trabajo diario. Desde
+                marcos modernos y
+                Desde lenguajes hasta plataformas potentes, mi kit de herramientas garantiza un desarrollo eficiente y de alta calidad. 🚀 🌟
             </p>
         </div>
     );
