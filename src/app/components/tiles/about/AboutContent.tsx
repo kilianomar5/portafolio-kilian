@@ -228,7 +228,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                 </div>
               </div>
               <p className="mt-3 text-gray-500 dark:text-gray-300 text-xs leading-relaxed sm:text-sm md:text-base max-w-[900px]">
-                I am an enthusiastic Laravel developer with experience, keen to leverage my robust knowledge in Laravel and related technologies to significantly contribute to the company success while continuously expanding my expertise. I enjoy creating solutions from scratch, exploring how things work, and I am driven by curiosity to solve complex challenges.
+                Apasionado de la informática, la música y el gaming. Como desarrollador, me encanta crear soluciones desde cero y explorar las tripas del código para entender cómo funciona todo. Mi experiencia técnica va desde el desarrollo de aplicaciones y gestión de bases de datos hasta la administración de redes de servidores. Me mueve la curiosidad, el aprendizaje continuo y el desafío de resolver problemas complejos aportando mi propio ritmo y creatividad
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2.5">
@@ -576,7 +576,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                     : "border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:bg-[#0d1117] dark:text-gray-200 dark:hover:bg-[#151f2b]"
                 }`}
               >
-                Experience
+                Experiencia
               </button>
               <button
                 type="button"
@@ -587,7 +587,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                     : "border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:bg-[#0d1117] dark:text-gray-200 dark:hover:bg-[#151f2b]"
                 }`}
               >
-                Education
+                Educación
               </button>
             </div>
 

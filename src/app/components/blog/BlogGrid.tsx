@@ -19,11 +19,7 @@ function formatDate(value?: string) {
 
 export default function BlogGrid({ items }: { items: BlogPost[] }) {
   const [selectedBlog, setSelectedBlog] = useState<BlogPost | null>(null);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const [isMounted, setIsMounted] = useState(true);
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
