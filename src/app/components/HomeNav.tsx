@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const baseLinks = ["Inicio", "Sobre Mi", "Tools", "Proyectos", "Blog"];
+const baseLinks = ["Inicio", "Sobre Mi", "Herramientas", "Proyectos", "Blog"];
 
 // 1. Añadimos un diccionario para enlazar tus textos en español con las carpetas reales
 const rutas: { [key: string]: string } = {
