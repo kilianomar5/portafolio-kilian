@@ -12,7 +12,7 @@ const BlogTile = () => {
         </p>
 
         <h2 className="mt-5 text-[32px] leading-none font-normal tracking-[-0.04em] text-black dark:text-white font-decorative ">
-          Notas & exploraciones
+          Notas & Artículos
         </h2>
       </div>
 
