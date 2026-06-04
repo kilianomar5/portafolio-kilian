@@ -135,7 +135,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                     required
                                     value={formData.name}
                                     onChange={handleChange}
-                                    placeholder="Your name"
+                                    placeholder="Tu Nombre"
                                     className="w-full px-4 py-3 bg-white dark:bg-[#111821] border border-gray-200 dark:border-gray-600 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#a352d1] transition-all font-medium text-sm shadow-sm"
                                 />
                             </div>
@@ -149,7 +149,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                     required
                                     value={formData.email}
                                     onChange={handleChange}
-                                    placeholder="you@example.com"
+                                    placeholder="tu@ejemplo.com"
                                     className="w-full px-4 py-3 bg-white dark:bg-[#111821] border border-gray-200 dark:border-gray-600 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#a352d1] transition-all font-medium text-sm shadow-sm"
                                 />
                             </div>
