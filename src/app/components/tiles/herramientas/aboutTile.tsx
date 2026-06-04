@@ -28,7 +28,7 @@ export default function aboutTile() {
             <p className="text-gray-500 text-base leading-relaxed max-w-[500px]">
                 Utilizo activamente un conjunto diverso de tecnologías y herramientas de vanguardia en mi trabajo diario. Desde
                 marcos modernos y
-                Desde lenguajes hasta plataformas potentes, mi kit de herramientas garantiza un desarrollo eficiente y de alta calidad. 🚀 🌟
+                Desde lenguajes hasta plataformas potentes, para crear soluciones eficientes y escalables.
             </p>
         </div>
     );

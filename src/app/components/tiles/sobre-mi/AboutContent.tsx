@@ -59,28 +59,23 @@ type TestimonialItem = {
   rating: number;
 };
 
-const skills = ["Software Developer", "Laravel", "PHP", "Tailwind"];
+const skills = ["Desarrollador Multiplataforma", "Kotlin", "Python", "React Native", "Docker", "Bases de Datos"];
 
 const education = [
   {
-    degree: "BCA",
-    institute: "Manipal University Jaipur",
-    period: "2024 - Present",
+    degree: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)", 
+    institute: "IES San Juan de la Rambla", 
+    period: "2024 - 2026", 
   },
   {
-    degree: "Computer Engineering & IT Infrastructure",
-    institute: "NTTF Bangalore",
-    period: "2019 - 2022",
+    degree: "Grado Medio en Sistemas Microinformáticos y Redes (SMR)", 
+    institute: "IES San Juan de la Rambla", 
+    period: "2022 - 2024", 
   },
   {
-    degree: "Plus Two Computer Science",
-    institute: "GVHSS Sivapuram",
-    period: "2017 - 2019",
-  },
-  {
-    degree: "SSLC",
-    institute: "GHSS Balussery",
-    period: "2016 - 2017",
+    degree: "Educación Secundaria Obligatoria (ESO)", 
+    institute: "Educación Secundaria", 
+    period: "2018 - 2021",
   },
 ];
 
