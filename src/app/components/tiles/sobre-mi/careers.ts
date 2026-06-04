@@ -47,9 +47,9 @@ export const careersData: CareerEntry[] = [
       },
     ],
     skills: [
-      { name: "Kotlin", icon: "/tech/kotlin.svg" },
-      { name: "Python", icon: "/tech/python.svg" },
-      { name: "React Native", icon: "/tech/react.svg" },
+      { name: "Kotlin", icon: "/tech/kotlin.png" },
+      { name: "Python", icon: "/tech/python.png" },
+      { name: "React Native", icon: "/tech/react.png" },
       { name: "MySQL", icon: "/tech/mysql.svg" },
       { name: "Docker", icon: "/tech/docker.svg" },
     ],
