@@ -12,8 +12,8 @@ export default function ProjectDetailsTile() {
 			<div className="absolute top-[18%] left-[36%] w-[76%] aspect-[257/567] -rotate-[30deg] rounded-[2.2rem] shadow-[0_20px_40px_rgba(15,23,42,0.20)] overflow-hidden ring-1 ring-black/5 z-20 bg-white">
 				<div className="w-full h-full relative">
 					<Image
-						src="/projects/audis-radio-p.png"
-						alt="Audis Radio mobile project preview"
+						src="/projects/hyronmc-web-movil.png"
+						alt="HyronMC web movil"
 						fill
 						quality={100}
 						unoptimized

@@ -20,7 +20,7 @@ export default function BusinessPreviewTile() {
 
             <Link
                 href="/proyectos"
-                aria-label="Go to projects page"
+                aria-label="Ir a la página de proyectos"
                 className="absolute bottom-0 left-0 m-4 z-30"
                 onPointerDown={(event) => event.stopPropagation()}
                 onMouseDown={(event) => event.stopPropagation()}
