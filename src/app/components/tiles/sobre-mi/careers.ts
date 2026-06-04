@@ -31,7 +31,7 @@ export const careersData: CareerEntry[] = [
     period: "Marzo 2026 - Mayo 2026", 
     badge: "Prácticas DAM",
     current: false,
-    logo: "/company/baifos.png", // Asegúrate de añadir este logo a tu carpeta public
+    logo: "/company/baifos.png",
     overview:
       "Empresa del sector tecnológico especializada en soluciones informáticas y desarrollo de software a medida.",
     myRole:
