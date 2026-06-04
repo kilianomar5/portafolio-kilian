@@ -100,10 +100,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
                 <div className="mb-6 mt-1">
                     <h3 className="text-[26px] font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-                        Reach Out
+                        Contacto
                     </h3>
                     <p className="mt-1.5 text-sm text-gray-600 dark:text-gray-300">
-                        Drop me a message and I'll get back to you securely to your inbox.
+                        Escríbeme un mensaje y me pondré en contacto contigo lo antes posible.
                     </p>
                 </div>
 
@@ -114,20 +114,20 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
                         </div>
-                        <h4 className="text-xl font-bold text-gray-900 dark:text-white">Message Sent!</h4>
-                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Thank you for reaching out. I'll respond shortly.</p>
+                        <h4 className="text-xl font-bold text-gray-900 dark:text-white">¡Mensaje Enviado!</h4>
+                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Gracias por ponerte en contacto. Te responderé en breve.</p>
                         <button 
                             onClick={onClose} 
                             className="mt-6 px-6 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition"
                         >
-                            Close Window
+                            Cerrar Ventana
                         </button>
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="space-y-1.5">
-                                <label htmlFor="name" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Name</label>
+                                <label htmlFor="name" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Nombre</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -141,7 +141,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                             </div>
 
                             <div className="space-y-1.5">
-                                <label htmlFor="email" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Email Address</label>
+                                <label htmlFor="email" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Dirección de Email</label>
                                 <input
                                     type="email"
                                     id="email"
@@ -156,7 +156,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </div>
 
                         <div className="space-y-1.5">
-                            <label htmlFor="message" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Your Message</label>
+                            <label htmlFor="message" className="text-[13px] font-semibold text-gray-700 dark:text-gray-300 ml-1">Tu Mensaje</label>
                             <textarea
                                 id="message"
                                 name="message"
@@ -164,7 +164,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 rows={5}
                                 value={formData.message}
                                 onChange={handleChange}
-                                placeholder="How can I help you?"
+                                placeholder="¿Cómo puedo ayudarte?"
                                 className="w-full px-4 py-3 bg-white dark:bg-[#111821] border border-gray-200 dark:border-gray-600 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#a352d1] transition-all font-medium text-sm resize-none shadow-sm"
                             ></textarea>
                         </div>
@@ -191,7 +191,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                     </svg>
                                 ) : (
-                                    "Send Message"
+                                    "Enviar Mensaje"
                                 )}
                             </span>
                         </button>
