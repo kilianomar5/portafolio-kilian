@@ -10,20 +10,20 @@ export default function IntroTile() {
     const greeting = useMemo(() => {
         const hour = new Date().getHours();
 
-        if (hour < 5) return "Working late 🌙";
-        if (hour < 12) return "Good morning ☀️";
-        if (hour < 15) return "Good noon 🌤️";
-        if (hour < 18) return "Good afternoon 🌞";
-        if (hour < 22) return "Good evening 🌆";
-        return "Good night 🌃";
+        if (hour < 5) return "Trabajo nocturno 🌙";
+        if (hour < 12) return "Buenos días ☀️";
+        if (hour < 15) return "Buenas tardes 🌤️";
+        if (hour < 18) return "Buenas noches 🌞";
+        if (hour < 22) return "Buenas tardes 🌆";
+        return "Buenas noches 🌃";
     }, []);
 
     const chatLines = useMemo(
         () => [
             `${greeting}`,
-            "Welcome, glad you are here ✨",
-            "I build clean, useful web apps 💻",
-            "Let us create something great together 🚀",
+            "Bienvenido, encantado de conocerte ✨",
+            "Construyo aplicaciones web limpias y útiles 💻",
+            "Creemos algo genial juntos 🚀",
         ],
         [greeting]
     );
@@ -90,7 +90,7 @@ export default function IntroTile() {
                 , un desarrollador web / reparador de equipos de Tenerife.
             </h1>
             <p className="mt-1 text-gray-500 text-base leading-relaxed max-w-[500px]">
-                Me especializo en crear aplicaciones web limpias y útiles, con un enfoque en la experiencia del usuario y el rendimiento. Me apasiona construir soluciones que no solo funcionen bien, sino que también sean agradables de usar. Si estás buscando a alguien para ayudarte a llevar tu proyecto al siguiente nivel, ¡hablemos! 🚀
+                Me especializo en crear aplicaciones web limpias y útiles, con un enfoque en la experiencia del usuario y el rendimiento. 
             </p>
         </div>
     );

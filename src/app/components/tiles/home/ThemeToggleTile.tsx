@@ -11,7 +11,8 @@ const ThemeToggleTile = () => {
   const { theme, toggleTheme } = useTheme();
   const [isHydrated, setIsHydrated] = useState(false);
   useEffect(() => {
-    setIsHydrated(true);
+    const timeoutId = window.setTimeout(() => setIsHydrated(true), 0);
+    return () => window.clearTimeout(timeoutId);
   }, []);
   if (!isHydrated) return null;
   return (
@@ -40,8 +41,8 @@ const ThemeToggleTile = () => {
                 <label htmlFor="switch" className="ring-2 ring-transparent dark:ring-gray-700">
                   <div className="toggle" />
                   <div className="names">
-                    <p className="light">Light</p>
-                    <p className="dark">Dark</p>
+                    <p className="light">Claro</p>
+                    <p className="dark">Oscuro</p>
                   </div>
                 </label>
               </div>

@@ -11,8 +11,8 @@ type SocialSlide = {
 	url: string;
 };
 
-const INSTAGRAM_URL = "https://www.instagram.com/aks.haay_";
-const LINKEDIN_URL = "https://www.linkedin.com/in/dev-akshay-p";
+const INSTAGRAM_URL = "https://www.instagram.com/kiliianomarr__/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/kilian-omar-9b690b292/";
 
 const SLIDES: SocialSlide[] = [
 	{

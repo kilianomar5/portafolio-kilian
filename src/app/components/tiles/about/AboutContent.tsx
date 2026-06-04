@@ -284,7 +284,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                     }}
                     className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:bg-[#0d1117] dark:text-gray-200 dark:hover:bg-[#151f2b]"
                   >
-                    See all experience
+                    Ver toda la experiencia
                     <FiArrowUpRight className="h-3.5 w-3.5" />
                   </button>
                 </div>
@@ -314,7 +314,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                     }}
                     className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:bg-[#0d1117] dark:text-gray-200 dark:hover:bg-[#151f2b]"
                   >
-                    See all studies
+                    Ver todos los estudios
                     <FiArrowUpRight className="h-3.5 w-3.5" />
                   </button>
                 </div>
@@ -324,7 +324,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
 
           <SectionCard title="Testimonials">
             <p className="mb-4 text-xs leading-6 text-gray-600 dark:text-gray-300 sm:text-sm sm:leading-7">
-              A few kind words from people I have worked with.
+              Una selección de testimonios sobre mi experiencia profesional.
             </p>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -360,7 +360,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                 ))
               ) : (
                 <div className="col-span-1 md:col-span-2 xl:col-span-3 text-center py-10 text-gray-500">
-                  No testimonials yet.
+                  No hay testimonios disponibles en este momento.
                 </div>
               )}
             </div>

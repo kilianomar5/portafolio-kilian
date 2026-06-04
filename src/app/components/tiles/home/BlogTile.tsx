@@ -8,11 +8,11 @@ const BlogTile = () => {
       {/* Content */}
       <div className="relative z-20 px-9 pt-8">
         <p className="text-[14px] leading-none text-[#3d3d3d] dark:text-zinc-400 font-normal tracking-[-0.01em]">
-          Curated thoughts, experiments & discoveries.
+          Pensamientos curados, experimentos y descubrimientos.
         </p>
 
         <h2 className="mt-5 text-[32px] leading-none font-normal tracking-[-0.04em] text-black dark:text-white font-decorative ">
-          Notes & explorations
+          Notas & exploraciones
         </h2>
       </div>
 
@@ -143,7 +143,7 @@ const BlogTile = () => {
           </div>
           {/* Text part (appears on hover) */}
           <span className="text-[13px] font-medium whitespace-nowrap opacity-0 transition-opacity duration-200 group-hover/btn:opacity-100 delay-75 pr-4 font-decorative">
-            Read Blog
+            Leer Blog
           </span>
         </div>
       </button>

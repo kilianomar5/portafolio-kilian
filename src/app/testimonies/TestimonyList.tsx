@@ -39,8 +39,8 @@ export default function TestimonyList() {
   if (reviews.length === 0) {
     return (
       <div className="text-center py-12 bg-white/5 rounded-3xl border border-white/10">
-        <p className="text-white/50 text-sm font-medium uppercase tracking-widest">No testimonies yet</p>
-        <p className="text-gray-400 mt-2">Be the first to leave one!</p>
+        <p className="text-white/50 text-sm font-medium uppercase tracking-widest">No hay testimonios disponibles</p>
+        <p className="text-gray-400 mt-2">¡Sé el primero en dejar uno!</p>
       </div>
     );
   }
