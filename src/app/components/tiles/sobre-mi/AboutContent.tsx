@@ -13,7 +13,7 @@ import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import styled, { keyframes } from "styled-components";
-import { careersData, type CareerEntry, type CareerProject } from "@/components/tiles/about/careers";
+import { careersData, type CareerEntry, type CareerProject } from "@/components/tiles/sobre-mi/careers";
 
 const spinGlow = keyframes`
   from { transform: translate(-50%, -50%) rotate(0deg); }

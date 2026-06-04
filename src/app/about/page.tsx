@@ -1,4 +1,4 @@
-import AboutContent from "@/components/tiles/about/AboutContent";
+import AboutContent from "@/components/tiles/sobre-mi/AboutContent";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 type SupabaseReviewRow = {

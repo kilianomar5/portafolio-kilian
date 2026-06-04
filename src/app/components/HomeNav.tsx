@@ -8,11 +8,11 @@ const baseLinks = ["Inicio", "Sobre Mi", "Tools", "Proyectos", "Blog"];
 // 1. Añadimos un diccionario para enlazar tus textos en español con las carpetas reales
 const rutas: { [key: string]: string } = {
     "Inicio": "/",
-    "Sobre Mi": "/about",
-    "Tools": "/tools",
-    "Proyectos": "/projects",
+    "Sobre Mi": "/sobre-mi",
+    "Herramientas": "/herramientas",
+    "Proyectos": "/proyectos",
     "Blog": "/blog",
-    "Testimonies": "/testimonies"
+    "Testimonies": "/testimonios" 
 };
 
 export default function HomeNav() {
