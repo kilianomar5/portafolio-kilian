@@ -394,17 +394,17 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
 
             <div className="max-h-[78vh] space-y-4 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5 md:px-6">
               <section className="rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-[#111821]">
-                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Overview</h4>
+                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Descripción</h4>
                 <p className="mt-2 text-xs leading-6 text-gray-700 dark:text-gray-200 sm:text-sm sm:leading-7">{selectedCareer.overview}</p>
               </section>
 
               <section className="rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-[#111821]">
-                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">My Role</h4>
+                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Mi Rol</h4>
                 <p className="mt-2 text-xs leading-6 text-gray-700 dark:text-gray-200 sm:text-sm sm:leading-7">{selectedCareer.myRole}</p>
               </section>
 
               <section className="rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-[#111821]">
-                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Projects</h4>
+                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Proyectos</h4>
                 <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {selectedCareer.projects.map((project, index) => (
                     <article
@@ -445,7 +445,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
               </section>
 
               <section className="h-[220px] rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-[#111821]">
-                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Skills Acquired</h4>
+                <h4 className="text-base font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-lg">Habilidades Adquiridas</h4>
                 <div className="mt-3 grid max-h-[155px] grid-cols-2 gap-2.5 overflow-y-auto pr-1 sm:grid-cols-3 md:grid-cols-4">
                   {selectedCareer.skills.map((skill) => (
                     <div
@@ -550,7 +550,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
           <div className="fixed inset-0 z-[1010] flex items-center justify-center bg-black/45 p-4 backdrop-blur-sm modal-backdrop-enter">
           <div className="w-full max-w-3xl rounded-4xl border border-gray-200 bg-white p-4 shadow-2xl dark:border-gray-700 dark:bg-[#0d1117] modal-content-enter sm:p-5 md:p-6">
             <div className="flex items-center justify-between gap-3">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white sm:text-xl">Career & Studies Timeline</h3>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white sm:text-xl">Cronología de Carrera y Estudios</h3>
               <button
                 type="button"
                 onClick={() => setIsTimelineOpen(false)}
