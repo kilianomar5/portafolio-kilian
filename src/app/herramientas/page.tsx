@@ -1,7 +1,7 @@
 import BentoTile from "@/components/BentoTile";
-import AboutTools from "@/components/tiles/tools/aboutTile";
-import TechTiles from "@/components/tiles/tools/techTiles";
-import { toolsData } from "@/components/tiles/tools/tools";
+import AboutTools from "@/components/tiles/herramientas/aboutTile";
+import TechTiles from "@/components/tiles/herramientas/techTiles";
+import { toolsData } from "@/components/tiles/herramientas/tools";
 
 export default function ToolsPage() {
     return (
