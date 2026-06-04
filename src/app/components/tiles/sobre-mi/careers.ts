@@ -93,8 +93,7 @@ export const careersData: CareerEntry[] = [
       "Atención directa al cliente en sala y terraza, gestión ágil de pedidos y soporte general para asegurar un servicio eficiente y satisfactorio.",
     projects: [],
     skills: [
-      { name: "Atención al Cliente", icon: "/tech/customerservice.svg" },
-      { name: "Trabajo en Equipo", icon: "/tech/teamwork.svg" },
+      { name: "Atención al Cliente", icon: "/tech/customerservice.png" }
     ],
   },
   {
@@ -111,7 +110,7 @@ export const careersData: CareerEntry[] = [
       "Apoyo integral en el servicio de atención al público, preparación de comandas y mantenimiento de las instalaciones durante la campaña de verano.",
     projects: [],
     skills: [
-      { name: "Atención al Cliente", icon: "/tech/customerservice.svg" },
+      { name: "Atención al Cliente", icon: "/tech/customerservice.png" },
     ],
   },
   {
@@ -128,10 +127,10 @@ export const careersData: CareerEntry[] = [
       "Experto en red e instalación de sistemas microinformáticos. Desempeñé funciones como instalador-reparador de equipos informáticos, asegurando el correcto funcionamiento de las infraestructuras de la administración local.", 
     projects: [],
     skills: [
-      { name: "Hardware", icon: "/tech/hardware.svg" },
-      { name: "Redes", icon: "/tech/network.svg" },
-      { name: "Windows", icon: "/tech/windows.svg" },
-      { name: "Soporte IT", icon: "/tech/support.svg" },
+      { name: "Hardware", icon: "/tech/hardware.png" },
+      { name: "Redes", icon: "/tech/network.png" },
+      { name: "Windows", icon: "/tech/windows.png" },
+      { name: "Soporte IT", icon: "/tech/support.png" },
     ],
   },
 ];
