@@ -6,7 +6,6 @@ const ICON_CARDS = [
     { name: "JavaScript", src: "/tech/js.svg", card: "w-24 h-24", icon: "w-15 h-15", pos: "top-[35%] right-[9%]", rot: "rotate-[20deg]", z: "z-20" },
     { name: "PHP", src: "/tech/php.svg", card: "w-26 h-22", icon: "w-17 h-10", pos: "top-[37%] left-[5%]", rot: "rotate-[10deg]", z: "z-20" },
     { name: "Tailwind", src: "/tech/tailwindcss.svg", card: "w-22 h-22", icon: "w-13 h-13", pos: "top-[52%] left-[39%]", rot: "rotate-[8deg]", z: "z-30" },
-    { name: "Redis", src: "/tech/redis.svg", card: "w-22 h-22", icon: "w-13 h-13", pos: "top-[54%] right-[-12%]", rot: "rotate-[18deg]", z: "z-10" },
     { name: "Postman", src: "/tech/postman.svg", card: "w-22 h-22", icon: "w-13 h-13", pos: "top-[67%] right-[7%]", rot: "rotate-[10deg]", z: "z-20" },
 ];
 
