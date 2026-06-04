@@ -76,7 +76,7 @@ export const careersData: CareerEntry[] = [
       { name: "Ubuntu", icon: "/tech/ubuntu.svg" },
       { name: "Java", icon: "/tech/java.svg" },
       { name: "Redes", icon: "/tech/network.svg" },
-      { name: "Bases de Datos", icon: "/tech/database.svg" },
+      { name: "Bases de Datos", icon: "/tech/mysql.svg" },
     ],
   },
   {
