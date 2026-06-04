@@ -56,7 +56,7 @@ export default function HomeNav() {
                     className={`relative grid items-center p-1 bg-[#eeeeee] dark:bg-[#0d1117] rounded-full ring-2 ring-transparent dark:ring-gray-700 w-full transition-all duration-500 overflow-hidden mx-auto`}
                     style={{ 
                         gridTemplateColumns: `repeat(${links.length}, minmax(0, 1fr))`,
-                        maxWidth: isExpanded ? '520px' : '400px'
+                        maxWidth: isExpanded ? '600px' : '500px'
                     }}
                 >
                     {/* Animated active indicator */}
