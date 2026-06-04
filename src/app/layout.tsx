@@ -23,7 +23,7 @@ const youngSerif = Young_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Kilian | Software Developer",
+  title: "ImHunter_Idk / Kilian | Software Developer",
   description: "Portafolio Oficial de Kilian, un desarrollador de software apasionado por crear soluciones innovadoras y eficientes. Explora mis proyectos, habilidades y experiencia en el desarrollo de software.",
 };
 
