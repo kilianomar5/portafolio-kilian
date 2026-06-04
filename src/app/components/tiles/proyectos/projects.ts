@@ -12,10 +12,6 @@ export const projectsData = [
     personal: true,
     tech: [
       {
-        name: "Angular",
-        image: "/tech/angular17.svg",
-      },
-      {
         name: "Tailwind",
         image: "/tech/tailwindcss.svg",
       },
