@@ -31,7 +31,7 @@ export default function TechStackTile() {
 
             <Link
                 href="/tools"
-                aria-label="Go to tools page"
+                aria-label="Ir a la página de herramientas"
                 className="absolute bottom-0 left-0 m-4 z-40"
                 onPointerDown={(event) => event.stopPropagation()}
                 onMouseDown={(event) => event.stopPropagation()}
