@@ -271,7 +271,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                         </div>
                         <div className="mt-2 flex items-center justify-between gap-3">
                           <p className="text-[11px] text-gray-500 dark:text-gray-400 sm:text-xs">{item.period}</p>
-                          <p className="text-[11px] font-semibold text-gray-600 dark:text-gray-300 text-right sm:text-xs">View details</p>
+                          <p className="text-[11px] font-semibold text-gray-600 dark:text-gray-300 text-right sm:text-xs">Ver detalles</p>
                         </div>
                       </article>
                     </GlowContainer>
@@ -624,7 +624,7 @@ export default function AboutContent({ testimonials: initialTestimonials = EMPTY
                         </div>
                         <div className="mt-2 flex items-center justify-between gap-3">
                           <p className="text-xs text-gray-500 dark:text-gray-400">{item.period}</p>
-                          <p className="text-xs font-semibold text-gray-600 dark:text-gray-300 text-right">View details</p>
+                          <p className="text-xs font-semibold text-gray-600 dark:text-gray-300 text-right">Ver detalles</p>
                         </div>
                       </article>
                     </GlowContainer>

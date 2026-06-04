@@ -25,102 +25,113 @@ export type CareerEntry = {
 
 export const careersData: CareerEntry[] = [
   {
-    id: "itrend",
-    role: "Software Engineer",
-    company: "iTrend Solution Pvt. Ltd.",
-    period: "May 2025 - Present",
-    badge: "Current",
+    id: "baifos",
+    role: "Prácticas de Desarrollo de Aplicaciones Multiplataforma", //[cite: 1]
+    company: "Baifos Informática - Fran Soluciones", //[cite: 1]
+    period: "Marzo 2026 - Mayo 2026", //[cite: 1]
+    badge: "Prácticas DAM",
+    current: false,
+    logo: "/company/baifos.png", // Asegúrate de añadir este logo a tu carpeta public
+    overview:
+      "Empresa del sector tecnológico especializada en soluciones informáticas y desarrollo de software a medida.",
+    myRole:
+      "Participación activa en el desarrollo de aplicaciones multiplataforma. Experiencia trabajando con lenguajes como Kotlin y Python, integración de bases de datos (MySQL/PostgreSQL) y despliegue de entornos utilizando contenedores Docker.",
+    projects: [
+      {
+        name: "TechNova (Gestor de Tickets)",
+        image: "/projects/technova.webp",
+      },
+      {
+        name: "App Peluquería SJR",
+        image: "/projects/peluqueria.webp",
+      },
+    ],
+    skills: [
+      { name: "Kotlin", icon: "/tech/kotlin.svg" },
+      { name: "Python", icon: "/tech/python.svg" },
+      { name: "React Native", icon: "/tech/react.svg" },
+      { name: "MySQL", icon: "/tech/mysql.svg" },
+      { name: "Docker", icon: "/tech/docker.svg" },
+    ],
+  },
+  {
+    id: "hyronmc",
+    role: "Administrador de Sistemas y Desarrollador",
+    company: "HyronMC",
+    period: "Enero 2026 - Actualidad",
+    badge: "Proyecto Propio",
     current: true,
-    logo: "/company/itrend.png",
+    logo: "/company/hyronmc.png",
     overview:
-      "iTrend Solution is a forward-thinking technology company streamlining e-commerce operations through advanced automation and data-driven systems.",
+      "Red de servidores de Minecraft con infraestructura escalable y una comunidad activa.",
     myRole:
-      "I lead development for API-driven workflows that connect Amazon Ads, SP-API, and warehouse APIs for real-time inventory synchronization and order processing. I also build AI Agents and manage AWS EC2 services to keep systems scalable, secure, and highly available.",
+      "Administración y mantenimiento de infraestructura en Ubuntu Server. Gestión de nodos BungeeCord, configuración avanzada de permisos con LuckPerms, gestión de bases de datos y desarrollo de la web principal del servidor.",
     projects: [
       {
-        name: "iTrend Commerce",
-        image: "/projects/itrend-sp.webp",
+        name: "HyronMC Web",
+        image: "/projects/hyronmc-web.webp",
       },
     ],
     skills: [
-      { name: "Laravel", icon: "/tech/laravel.svg" },
-      { name: "Livewire", icon: "/tech/Livewire.svg" },
-      { name: "Bootstrap", icon: "/tech/bootstrap.svg" },
-      { name: "PHP", icon: "/tech/php.svg" },
-      { name: "MySQL", icon: "/tech/mysql.svg" },
-      { name: "AWS", icon: "/tech/aws.svg" },
       { name: "Ubuntu", icon: "/tech/ubuntu.svg" },
-      { name: "Redis", icon: "/tech/redis.svg" },
-      { name: "Ollama", icon: "/tech/ollama.svg" },
+      { name: "Java", icon: "/tech/java.svg" },
+      { name: "Redes", icon: "/tech/network.svg" },
+      { name: "Bases de Datos", icon: "/tech/database.svg" },
     ],
   },
   {
-    id: "cloudrevel",
-    role: "Software Engineer",
-    company: "Cloudrevel Innovations Pvt. Ltd.",
-    period: "Mar 2023 - Apr 2025",
-    badge: "Core Team",
-    current: false,
-    logo: "/company/cloudrevel.jpg",
+    id: "el-castillo",
+    role: "Camarero", //[cite: 1]
+    company: "Bar Cafetería Heladería El Castillo", //[cite: 1]
+    period: "Agosto 2025 - Actualidad", //[cite: 1]
+    badge: "Hostelería",
+    current: true,
+    logo: "/company/elcastillo.png",
     overview:
-      "Cloudrevel builds modern SaaS products and internal platforms for fast-moving startups and growing businesses.",
+      "Establecimiento local de restauración ubicado en Buenavista del Norte.",
     myRole:
-      "I built and maintained full-stack modules, developed reusable UI patterns, and delivered integrations for third-party services. I worked closely with product and design teams to ship reliable features quickly while keeping the codebase maintainable.",
-    projects: [
-      {
-        name: "MyHinez",
-        image: "/projects/hinez.webp",
-      },
-      {
-        name: "Swiftrevel",
-        image: "/projects/swiftrevel.webp",
-      },
-      {
-        name: "Rugr Fintech",
-        image: "/projects/rugr.webp",
-      },
-    ],
+      "Atención directa al cliente en sala y terraza, gestión ágil de pedidos y soporte general para asegurar un servicio eficiente y satisfactorio.",
+    projects: [],
     skills: [
-      { name: "Laravel", icon: "/tech/laravel.svg" },
-      { name: "PHP", icon: "/tech/php.svg" },
-      { name: "Tailwind", icon: "/tech/tailwindcss.svg" },
-      { name: "Splade", icon: "/tech/splade.svg" },
-      { name: "Postman", icon: "/tech/postman.svg" },
-      { name: "Figma", icon: "/tech/figma.svg" },
-      { name: "Jira", icon: "/tech/jira.svg" },
+      { name: "Atención al Cliente", icon: "/tech/customerservice.svg" },
+      { name: "Trabajo en Equipo", icon: "/tech/teamwork.svg" },
     ],
   },
   {
-    id: "aof",
-    role: "Jr. Software Developer",
-    company: "AOF Engineering Systems LLC",
-    period: "Sep 2022 - Mar 2023",
-    badge: "Early Career",
+    id: "100-montaditos",
+    role: "Ayudante de Camarero", //[cite: 1]
+    company: "100 Montaditos Garachico", //[cite: 1]
+    period: "Junio 2025 - Julio 2025", //[cite: 1]
+    badge: "Hostelería",
     current: false,
-    logo: "/company/aof.jpg",
+    logo: "/company/100montaditos.png",
     overview:
-      "AOF Engineering Systems LLC supports industrial and business systems with practical digital tools and technical services.",
+      "Franquicia reconocida del sector de la restauración.",
     myRole:
-      "I worked on core web features, bug fixes, data validation flows, and production support. This role strengthened my fundamentals in backend architecture, debugging, and clean implementation of client requirements.",
-    projects: [
-      {
-        name: "Farmers Copper",
-        image: "/projects/farmers-copper.webp",
-      },
-      {
-        name: "4M HUB",
-        image: "/projects/4mhub.png",
-      },
-    ],
+      "Apoyo integral en el servicio de atención al público, preparación de comandas y mantenimiento de las instalaciones durante la campaña de verano.",
+    projects: [],
     skills: [
-      { name: "PHP", icon: "/tech/php.svg" },
-      { name: "Laravel", icon: "/tech/laravel.svg" },
-      { name: "MySQL", icon: "/tech/mysql.svg" },
-      { name: "HTML", icon: "/tech/html5.svg" },
-      { name: "CSS", icon: "/tech/css3.svg" },
-      { name: "JavaScript", icon: "/tech/js.svg" },
-      { name: "Bootstrap", icon: "/tech/bootstrap.svg" },
-      { name: "GitHub", icon: "/tech/github.svg" },
+      { name: "Atención al Cliente", icon: "/tech/customerservice.svg" },
+    ],
+  },
+  {
+    id: "ayto-buenavista",
+    role: "Prácticas de Sistemas Microinformaticos y Redes", //[cite: 1]
+    company: "Ayuntamiento de Buenavista del Norte", //[cite: 1]
+    period: "Abril 2024 - Junio 2024", //[cite: 1]
+    badge: "Prácticas SMR",
+    current: false,
+    logo: "/company/buenavista.png",
+    overview:
+      "Entidad pública responsable de la gestión municipal, infraestructura tecnológica y atención ciudadana.",
+    myRole:
+      "Experto en red e instalación de sistemas microinformáticos. Desempeñé funciones como instalador-reparador de equipos informáticos, asegurando el correcto funcionamiento de las infraestructuras de la administración local.", //[cite: 1]
+    projects: [],
+    skills: [
+      { name: "Hardware", icon: "/tech/hardware.svg" },
+      { name: "Redes", icon: "/tech/network.svg" },
+      { name: "Windows", icon: "/tech/windows.svg" },
+      { name: "Soporte IT", icon: "/tech/support.svg" },
     ],
   },
 ];
