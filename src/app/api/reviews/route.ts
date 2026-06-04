@@ -6,7 +6,7 @@ export async function GET() {
     const reviews = await getApprovedReviews();
     return NextResponse.json(reviews);
   } catch (error: unknown) {
-    console.error('Error fetching reviews:', error);
+    console.error('Error revisando reviews:', error);
     return NextResponse.json({ error: error instanceof Error ? error.message : 'Internal Server Error' }, { status: 500 });
   }
 }
@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     } catch (supabaseError: any) {
       console.error('Supabase Save Failed:', supabaseError);
       return NextResponse.json({ 
-        error: 'Failed to save review to database.',
+        error: 'Fallo al enviar el testimonio, por favor intenta de nuevo.',
         details: supabaseError.message || JSON.stringify(supabaseError)
       }, { status: 500 });
     }

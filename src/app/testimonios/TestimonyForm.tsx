@@ -44,11 +44,11 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
         setTimeout(() => setStatus('idle'), 5000);
         onSuccess?.();
       } else {
-        throw new Error(result.error || 'Failed to submit review');
+        throw new Error(result.error || 'Fallo al enviar el testimonio, por favor intenta de nuevo.');
       }
     } catch (err: unknown) {
       setStatus('error');
-      setErrorMessage(err instanceof Error ? err.message : 'An unknown error occurred');
+      setErrorMessage(err instanceof Error ? err.message : 'Ha ocurrido un error inesperado');
     } finally {
       setIsSubmitting(false);
     }
@@ -57,8 +57,8 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
   return (
     <div className="w-full max-w-md mx-auto p-5 bg-white dark:bg-[#0D1117] rounded-4xl border border-gray-200 dark:border-gray-700 ring-2 ring-transparent dark:ring-gray-800 shadow-xl overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">Leave a Testimony</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">Your feedback is greatly appreciated.</p>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">Envía un Testimonio</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Tu opinión es muy valorada.</p>
       </div>
 
       {status === 'success' ? (
@@ -66,19 +66,19 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
           <div className="w-14 h-14 bg-green-500/10 rounded-full flex items-center justify-center text-green-500 mb-3 border border-green-500/20">
             <FiCheck size={28} />
           </div>
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Thank You!</h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Submitted for review.</p>
+          <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">¡Gracias!</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Enviado para revisión.</p>
           <button 
             onClick={() => setStatus('idle')}
             className="mt-5 px-5 py-2 text-sm font-semibold bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-900 dark:text-white rounded-full transition-all border border-gray-200 dark:border-white/10"
           >
-            Submit another
+            Enviar otro testimonio
           </button>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1">
-            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Full Name *</label>
+            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Nombre Completo *</label>
             <input
               required
               name="name"
@@ -91,7 +91,7 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
 
           <div className="grid grid-cols-2 gap-3">
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Position</label>
+              <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Cargo</label>
               <input
                 name="position"
                 value={formData.position}
@@ -101,7 +101,7 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
               />
             </div>
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Company</label>
+              <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Empresa</label>
               <input
                 name="company"
                 value={formData.company}
@@ -113,7 +113,7 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
           </div>
 
           <div className="space-y-1">
-            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Rating</label>
+            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Calificación</label>
             <div className="flex items-center space-x-2 bg-gray-50 dark:bg-[#111821] border border-gray-200 dark:border-gray-700 rounded-2xl px-4 py-2">
               {[1, 2, 3, 4, 5].map((star) => (
                 <button
@@ -129,14 +129,14 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
           </div>
 
           <div className="space-y-1">
-            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Review *</label>
+            <label className="text-[11px] font-bold text-gray-400 dark:text-gray-500 ml-2 uppercase tracking-tight">Comentario *</label>
             <textarea
               required
               name="review"
               value={formData.review}
               onChange={handleChange}
               rows={3}
-              placeholder="Your experience..."
+              placeholder="Tu experiencia..."
               className="w-full px-4 py-2.5 bg-gray-50 dark:bg-[#111821] border border-gray-200 dark:border-gray-700 rounded-2xl text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500/30 transition-all resize-none text-sm"
             />
           </div>
@@ -160,9 +160,9 @@ export default function TestimonyForm({ onSuccess }: TestimonyFormProps) {
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                Submitting...
+                Enviando...
               </span>
-            ) : <span className="text-sm">Send Testimony</span>}
+            ) : <span className="text-sm">Enviar Testimonio</span>}
           </button>
         </form>
       )}

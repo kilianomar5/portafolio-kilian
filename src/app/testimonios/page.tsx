@@ -3,8 +3,8 @@ import TestimonyForm from './TestimonyForm';
 import TestimonyList from './TestimonyList';
 
 export const metadata = {
-  title: 'Testimonies | ImHunter_Idk',
-  description: 'Share your experience working with me.',
+  title: 'Testimonios | ImHunter_Idk',
+  description: 'Comparte tu experiencia trabajando conmigo.',
 };
 
 export default function TestimoniesPage() {
@@ -21,11 +21,11 @@ export default function TestimoniesPage() {
         <div className="text-center mb-3 space-y-3">
           <div className="inline-block px-3 py-1 rounded-full bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 backdrop-blur-md shadow-sm">
             <span className="text-[10px] font-bold text-gray-500 dark:text-purple-400 uppercase tracking-[0.2em]">
-              Testimonies &bull; Feedback
+              Testimonios &bull; Feedback
             </span>
           </div>
           <p className="max-w-md mx-auto text-gray-500 dark:text-gray-400 text-sm md:text-base font-medium leading-relaxed">
-            Sharing experiences and building connections through shared projects.
+            Compartiendo experiencias y construyendo conexiones a través de proyectos compartidos.
           </p>
         </div>
 
@@ -38,8 +38,8 @@ export default function TestimoniesPage() {
         <div className="space-y-4">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b border-gray-200 dark:border-gray-800">
             <div className="space-y-1">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">Other Feedback</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">What others think about our collaboration.</p>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">Otros Testimonios</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Mira los testimonios de otros desarrolladores.</p>
             </div>
           </div>
 
