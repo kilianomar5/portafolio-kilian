@@ -34,11 +34,12 @@ export async function POST(req: Request) {
         is_approved: false
       });
       return NextResponse.json({ success: true, data });
-    } catch (supabaseError: any) {
+    } catch (supabaseError: unknown) {
       console.error('Supabase Save Failed:', supabaseError);
+      const errorDetails = supabaseError instanceof Error ? supabaseError.message : JSON.stringify(supabaseError);
       return NextResponse.json({ 
         error: 'Fallo al enviar el testimonio, por favor intenta de nuevo.',
-        details: supabaseError.message || JSON.stringify(supabaseError)
+        details: errorDetails
       }, { status: 500 });
     }
   } catch (error: unknown) {
