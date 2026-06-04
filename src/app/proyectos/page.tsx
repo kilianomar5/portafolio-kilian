@@ -6,8 +6,8 @@ import { useSensor, useSensors, PointerSensor } from "@dnd-kit/core";
 import { restrictToFirstScrollableAncestor } from "@dnd-kit/modifiers";
 import { SortableItem } from "@/components/SortableItem";
 import BentoTile from "@/components/BentoTile";
-import ProjectTile from "@/components/tiles/projects/projectTile";
-import { projectsData } from "@/components/tiles/projects/projects";
+import ProjectTile from "@/components/tiles/proyectos/projectTile";
+import { projectsData } from "@/components/tiles/proyectos/projects";
 
 export default function ProjectPage() {
     const [items, setItems] = useState(projectsData.map(p => p.name));
