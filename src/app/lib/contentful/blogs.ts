@@ -1,4 +1,4 @@
-import { createClient } from "contentful";
+import { createClient, EntryCollection } from "contentful";
 
 export type BlogTag = {
   name?: string;
