@@ -8,7 +8,7 @@ const BlogTile = () => {
       {/* Content */}
       <div className="relative z-20 px-9 pt-8">
         <p className="text-[14px] leading-none text-[#3d3d3d] dark:text-zinc-400 font-normal tracking-[-0.01em]">
-          Pensamientos curados, experimentos y descubrimientos.
+          Pensamientos curados, experimentos.
         </p>
 
         <h2 className="mt-5 text-[32px] leading-none font-normal tracking-[-0.04em] text-black dark:text-white font-decorative ">
